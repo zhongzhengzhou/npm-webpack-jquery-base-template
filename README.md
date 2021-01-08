@@ -2,8 +2,7 @@
 A base-template for npm, webpack and jquery
 ## Guide
 ```
-npm install
-
+npm install  
 npm run serve
 ```
 
