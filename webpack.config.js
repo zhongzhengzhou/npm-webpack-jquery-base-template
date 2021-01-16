@@ -50,7 +50,7 @@ module.exports = {
         { from: 'src/video', to: 'video' }
       ]
     }),
-    new Webpack.ProvidePlugin({
+    new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
