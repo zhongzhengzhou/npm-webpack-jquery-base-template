@@ -47,15 +47,12 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {
-          from: __dirname + '/src/video',
-          to: __dirname + '/dist/video'
-        }
+        { from: 'src/video', to: 'video' }
       ]
     })
   ],
   devServer: {
-    contentBase: './dist',
+    contentBase: path.join(__dirname, "dist"),
     inline: true,
     port: 8096
   }
