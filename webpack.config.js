@@ -49,7 +49,12 @@ module.exports = {
       patterns: [
         { from: 'src/video', to: 'video' }
       ]
-    })
+    }),
+    new Webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),
